@@ -46,6 +46,8 @@ public:
 
     // mover method:
     void step(int number_of_steps);
+    
+    // move, untill fuc return 1
     void step(int steps_to_move,  int (*fun)());
 
 private:
