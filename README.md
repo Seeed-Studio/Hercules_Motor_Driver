@@ -11,7 +11,7 @@ Compared with L298, its half bridge motor controller IR2104 and N-MOSFET take pr
  
 This motor controller is Arduino compatible. Best of all, it is focusing on high- expansion. The reserved standard Grove ports bring you a convenient access to abundant modules on the platform of motor car, such as Servo and Encoder, thus it embraces multi-functions that you can build up versatile masterpieces.
 
-*Features*
+***Features***
 
 - Full bridge drive circuit based on MOSFET supports two independent channels， each channel up to 15A
 - LED shows fuse protection status
