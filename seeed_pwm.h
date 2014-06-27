@@ -15,10 +15,10 @@ class seeed_pwm
     public:
     
     void init();
-    void setPwm(char pin, int duty, long freq);     // Hz
-    void disablePwm(char pin);                      // pin = 9 or 10
-    void setFreq(long freq);                        // Hz
-    void setPwmDuty(char pin, int duty);            // duty: 0-100 %
+    void setPwm(char pin, int duty, long freq);             // Hz
+    void disablePwm(char pin);                              // pin = 9 or 10
+    void setFreq(long freq);                                // Hz
+    void setPwmDuty(char pin, int duty);                    // duty: 0-100 %
 };
 
 extern seeed_pwm PWM;

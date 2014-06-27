@@ -19,6 +19,47 @@ This motor controller is Arduino compatible. Best of all, it is focusing on high
 - Atmege328 controller, Arduino compatible
 
 <br>
+
+#Usage
+
+##How to program
+There is Atmega328P on borad, but without USB to Serial IC, you need a extend USB to Serial device, if you can't find such device, you can refer to [here](http://www.seeedstudio.com/depot/UartSBee-V5-p-1752.html)
+
+RX, TX, DTR and GND need to connect to the USB to Serial device.
+
+Then you can upload code to Hercules just like you programming an Arduino. And the board choose *Arduino Duemilanove w/Atmega328*
+
+
+##Control a DC motor
+First you should connect a motor to M1 or M2 of Hercules. just as following:
+
+![](http://www.seeedstudio.com/wiki/images/b/b3/IMG_0204-1-.JPG)
+
+Then you can try the demo code in examples - DC_Motor, You will find you motor will turn a direction for 3s, then turn reverse for 3s, and loop like this.
+
+
+##Control a Stepper
+Hercules can also drive stepper, expecially suit for high-power stepper.
+
+Connect you stepper to Hercules:
+
+- stepper A1 -> M1+
+- stepper A2 -> M1-
+- stepper B1 -> M2+
+- stepper B2 -> M2-
+
+Then try the demo code for stepper in examples foler. It's just like the Arduino origin stepper demo.
+
+#Function
+
+
+
+
+
+
+
+
+
 ----
 
 This software is written by loovee ([luweicong@seeedstudio.com](luweicong@seeedstudio.com "luweicong@seeedstudio.com")) for seeed studio<br>

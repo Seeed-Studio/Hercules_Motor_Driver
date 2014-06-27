@@ -1,8 +1,14 @@
 /*
-  moto_4wd.cpp
+  Hercules.cpp
   2012 Copyright (c) Seeed Technology Inc.  All right reserved.
  
   Author: Loovee
+  
+  ChangeLog:
+  
+  2014-6-27
+  - Change name to Hercules.h, add pwm_lvc to the local folder
+  - Add Stepper control
   
   This library is free software; you can redistribute it and/or
   modify it under the terms of the GNU Lesser General Public
@@ -13,7 +19,6 @@
   but WITHOUT ANY WARRANTY; without even the implied warranty of
   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
   Lesser General Public License for more details.
-
   You should have received a copy of the GNU Lesser General Public
   License along with this library; if not, write to the Free Software
   Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
@@ -21,13 +26,13 @@
 
 #include <Arduino.h>
 #include <seeed_pwm.h>
-#include "motordriver_4wd.h"
+#include "Hercules.h"
 
 /*********************************************************************************************************
 ** Function name: init
 ** Descriptions:  init all pins
 *********************************************************************************************************/
-void motor_4wd::init()
+void motor_4wd::begin()
 {
     motorSpeed1     = 0;
     motorSpeed2     = 0;
@@ -129,7 +134,8 @@ void motor_4wd::setStop2()
 *********************************************************************************************************/
 void motor_4wd::setSpeed1(int ispeed)       // pwm, 0-100
 {
-    motorSpeed1 = ispeed < 100 ? ispeed : 100;
+    motorSpeed1 = ispeed < 100 ? ispeed : 99;
+    setRun1();
 }
 
 /*********************************************************************************************************
@@ -138,7 +144,8 @@ void motor_4wd::setSpeed1(int ispeed)       // pwm, 0-100
 *********************************************************************************************************/
 void motor_4wd::setSpeed2(int ispeed)       // pwm, 0-100
 {
-    motorSpeed2 = ispeed < 100 ? ispeed : 100;
+    motorSpeed2 = ispeed < 100 ? ispeed : 99;
+    setRun2();
 }
 
 /*********************************************************************************************************
@@ -177,7 +184,6 @@ void motor_4wd::setSpeedDir1(int ispeed, unsigned char dir)
     setSpeed1(ispeed); 
     setDir1(dir);
     setRun1();
-    
 }
 
 /*********************************************************************************************************
