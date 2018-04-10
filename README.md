@@ -1,7 +1,9 @@
 Hercules Dual 15A 6-20V Motor Controller
 ---------------------------------------------------------
-[![Hercules Dual 15A 6-20V Motor Controller](http://www.seeedstudio.com/depot/images/product/Hercules%20controller.jpg)](http://www.seeedstudio.com/depot/Hercules-Dual-15A-620V-Motor-Controller-p-1515.html?cPath=91_92)
 
+<img src=https://statics3.seeedstudio.com/product/Hercules%20controller_02.jpg width=400>
+
+<img src=https://statics3.seeedstudio.com/product/Hercules%20controller_04.jpg width=400>
 
 
 <br>
@@ -33,7 +35,7 @@ Then you can upload code to Hercules just like you programming an Arduino. And t
 ##Control a DC motor
 First you should connect a motor to M1 or M2 of Hercules. just as following:
 
-![](http://www.seeedstudio.com/wiki/images/b/b3/IMG_0204-1-.JPG)
+![](https://raw.githubusercontent.com/SeeedDocument/Hercules_Dual_15A_6-20V_Motor_Controller/master/img/IMG_0204-1-.JPG)
 
 Then you can try the demo code in examples - DC_Motor, You will find you motor will turn a direction for 3s, then turn reverse for 3s, and loop like this.
 
@@ -123,4 +125,4 @@ global distributors and partners to push open hardware movement.<br>
 
 
 
-[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/CAN_BUS_Shield)](https://github.com/igrigorik/ga-beacon)
+[![Analytics](https://ga-beacon.appspot.com/UA-46589105-3/Hercules_Motor_Driver)](https://github.com/igrigorik/ga-beacon)
