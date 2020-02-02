@@ -6,14 +6,13 @@
 
 #define TIMER1COUNT 65536    // Timer1 is 16 bit
 
-class seeed_pwm 
-{
-    private:
+class seeed_pwm {
+  private:
     unsigned int pwmPeriod;
     unsigned char clockSelectBits;
-    
-    public:
-    
+
+  public:
+
     void init();
     void setPwm(char pin, int duty, long freq);             // Hz
     void disablePwm(char pin);                              // pin = 9 or 10
@@ -24,6 +23,6 @@ class seeed_pwm
 extern seeed_pwm PWM;
 #endif
 /*********************************************************************************************************
-  END FILE
+    END FILE
 *********************************************************************************************************/
 

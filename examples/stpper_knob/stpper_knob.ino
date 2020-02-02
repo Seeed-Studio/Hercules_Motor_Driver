@@ -1,14 +1,14 @@
 /*
- * MotorKnob
- *
- * A stepper motor follows the turns of a potentiometer
- * (or other sensor) on analog input 0.
- *
- * fork from Arduino Origin examples
- *
- * Modify by Loovee, to fit Seeed Hercules
- * 2014-6-27
- */
+    MotorKnob
+
+    A stepper motor follows the turns of a potentiometer
+    (or other sensor) on analog input 0.
+
+    fork from Arduino Origin examples
+
+    Modify by Loovee, to fit Seeed Hercules
+    2014-6-27
+*/
 
 #include "Hercules_Stepper.h"
 
@@ -24,14 +24,12 @@ stepper_4wd stepper(STEPS);
 // the previous reading from the analog input
 int previous = 0;
 
-void setup()
-{
+void setup() {
     // set the speed of the motor to 30 RPMs
     stepper.setSpeed(30, 100);                // start speed: 30, max speed: 100
 }
 
-void loop()
-{
+void loop() {
     // get the sensor value
     int val = analogRead(0);
 
