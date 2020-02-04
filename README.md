@@ -1,4 +1,4 @@
-Hercules Dual 15A 6-20V Motor Controller
+Hercules Dual 15A 6-20V Motor Controller  [![Build Status](https://travis-ci.com/Seeed-Studio/Hercules_Motor_Driver.svg?branch=master)](https://travis-ci.com/Seeed-Studio/Hercules_Motor_Driver)
 ---------------------------------------------------------
 
 <img src=https://statics3.seeedstudio.com/product/Hercules%20controller_02.jpg width=400>
